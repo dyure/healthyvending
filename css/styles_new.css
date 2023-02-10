@@ -1,0 +1,37 @@
+@font-face {
+	font-family: 'Exo-Regular';
+	src: url('../font/Exo2-Regular.ttf');
+}
+@font-face {
+	font-family: 'Exo-Bold';
+	src: url('../font/Exo2-Bold.ttf');
+}
+@font-face {
+	font-family: 'Exo-SemiBold';
+	src: url('../font/Exo2-SemiBold.ttf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Exo-Regular';
+	background-color: #ffffff;
+	font-size: 18px;
+}
+
+.title_1 {
+	margin-bottom: 30px;
+}
+.block {
+	background-color: #c0c0c0;
+	border: 1px solid gray;
+	margin-bottom: 30px;
+	padding: 5px;
+	text-align: center;
+}
+
+
+
