@@ -56,7 +56,7 @@ video.main_video {
 	top: 0;
 }
 .menu_container_in {
-	width: 1185px;
+	width: 1186px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -473,6 +473,8 @@ p:last-child {
 		font-weight: 700;
 		line-height: 25px;
 		color: #ffffff;
+		position: absolute;
+		bottom: 60px;
 	}
 	.main_mobile img {
 		width: 100%;
