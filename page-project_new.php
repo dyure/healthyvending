@@ -50,6 +50,26 @@
         </div>
     </section>
 
+    <section class="clients row gy-3">
+        <div class="col-sm-6 col-md-4 col-lg-2">
+            <div class="block">Client</div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2">
+            <div class="block">Client</div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2">
+            <div class="block">Client</div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2">
+            <div class="block">Client</div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2">
+            <div class="block">Client</div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2">
+            <div class="block">Client</div>
+        </div>
+    </section>
 </div>
 </body>
 </html>
