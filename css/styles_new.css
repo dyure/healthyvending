@@ -1,39 +1,99 @@
-@font-face {
-	font-family: 'Exo-Regular';
-	src: url('../font/Exo2-Regular.ttf');
-}
-@font-face {
-	font-family: 'Exo-Bold';
-	src: url('../font/Exo2-Bold.ttf');
-}
-@font-face {
-	font-family: 'Exo-SemiBold';
-	src: url('../font/Exo2-SemiBold.ttf');
-}
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+:root {
+	--color-black: #000000;
+	--color-white: #f5f5f5;
+	--color-gray: #787878;
+	--color-green: #71d400;
+}
 body {
-	font-family: 'Exo-Regular';
-	background-color: #ffffff;
-	font-size: 18px;
+	font-family: 'Montserrat';
+	background-color: var(--color-black)!important;
+	color: var(--color-white);
 }
-.out {
-	border: 1px solid gray;	
+.out,
+.footer__logo,
+.footer__menu,
+.footer__email,
+.footer__phone {
+	border: 1px solid var(--color-gray);
 }
-.title_1 {
+.footer__ {
+	margin-top: 70px!important;
+}
+.footer__menu {
+	display: flex;
+	justify-content: flex-start;
+}
+.footer__menu .footer__menu_left {
+	margin-right: 47px;
+}
+.footer__menu .footer__menu_left ul,
+.footer__menu .footer__menu_right ul {
+	list-style: none;
+}
+.footer__menu .footer__menu_left ul li,
+.footer__menu .footer__menu_right ul li {
+	color: var(--color-gray);
+	font-size: 15px;
+	line-height: 18px;
+	margin-bottom: 17px;
+}
+.footer__menu .footer__menu_left ul li a,
+.footer__menu .footer__menu_right ul li a {
+	color: inherit;
+	text-decoration: none;
+	display: block;
+}
+.footer__menu .footer__menu_left ul li a:hover,
+.footer__menu .footer__menu_right ul li a:hover,
+.email_text a:hover {
+	color: var(--color-white);
+}
+.footer__email_email {
 	margin-bottom: 30px;
 }
-.block {
-	background-color: #c0c0c0;
-	border: 1px solid gray;
-	margin: 30px 0;
-	padding: 10px;
-	text-align: center;
+.email_pic,
+.chief_pic {
+	color: var(--color-white);
+	font-size: 15px;
+	line-height: 18px;
+	margin-bottom: 10px;
 }
-
-
-
+.email_pic img,
+.chief_pic img {
+	margin-right: 20px;
+}
+.email_text a {
+	color: var(--color-gray);
+	text-decoration: none;
+}
+.email_text,
+.chief_text {
+	padding-left: 44px;
+	color: var(--color-gray);
+}
+.footer__phone {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.footer__phone_phone {
+	color: var(--color-green);
+	font-family: 'Roboto';
+	font-size: 25px;
+	line-height: 30px;
+	letter-spacing: 4px;
+	margin-bottom: 35px;
+}
+.footer__phone_social {
+	width: 190px;
+	display: flex;
+	justify-content: space-between;
+}
