@@ -29,10 +29,7 @@ body {
 }
 .footer__menu {
 	display: flex;
-	justify-content: flex-start;
-}
-.footer__menu .footer__menu_left {
-	margin-right: 47px;
+	justify-content: space-around;
 }
 .footer__menu .footer__menu_left ul,
 .footer__menu .footer__menu_right ul {
