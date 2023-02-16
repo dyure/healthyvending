@@ -12,7 +12,7 @@
 	--color-gray: #787878;
 	--color-green: #71d400;
 }
-body {
+body.new {
 	font-family: 'Montserrat';
 	background-color: var(--color-black)!important;
 	color: var(--color-white);

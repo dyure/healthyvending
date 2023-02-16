@@ -23,7 +23,7 @@
 </div>
 <div class="container_flex_mobile">
     <div class="main_mobile"></div>
-    <div class="main_phone">+7 985 649 98 89</div>
+    <div class="main_phone"><a href="tel:+79856499889">+7 985 649 98 89</a></div>
 </div>
 </body>
 </html>

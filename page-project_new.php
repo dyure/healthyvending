@@ -6,7 +6,7 @@
     <title><?php the_title(); ?></title>
     <?php wp_head(); ?>
 </head>
-<body>
+<body class="new">
     <div class="out container-xl">
         <section class="footer__ row">
             <div class="footer__logo col-sm-2 d-none d-xl-block">
