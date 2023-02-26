@@ -8,15 +8,39 @@
 </head>
 <body class="new">
     <div class="container-sm container-md container-xl container-xxl">
+        <section class="header">
+            <div class="row">
+                <nav class="menu_left_new d-none d-xl-block col-xl-5">
+                    <?php wp_nav_menu('menu=left'); ?>
+                </nav>
+                <div class="menu_logo_new col-xl-2 d-flex justify-content-xl-center col-6 justify-content-lg-start">
+                    <a href="<?php echo get_home_url(); ?>" class="d-flex align-items-center">
+                        <img src="https://healthyvending.ru/wp-content/uploads/2020/12/logo-1.png" width="150" height="27" alt="<?php the_title(); ?>">
+                    </a>
+                </div>
+                <div class="d-xl-none d-lg-block col-6">
+                    <div class="menu_burger d-flex align-items-center justify-content-end">
+                        <img src="https://healthyvending.ru/wp-content/uploads/2020/12/bars.png" alt="" />
+                    </div>
+                </div>
+                <nav class="menu_right_new d-none d-xl-block col-xl-5">
+                    <?php wp_nav_menu('menu=right'); ?>
+                </nav>
+            </div>
+            <div class="nav_mobile">
+                <?php wp_nav_menu('menu=mobile'); ?>
+            </div>
+        </section>
+
         <section class="footer__ row">
             <div class="footer__logo d-none d-xl-block col-xl-2">
                 <a href="<?php echo get_home_url(); ?>">
                     <img src="https://healthyvending.ru/wp-content/uploads/2020/12/logo-1.png" alt="<?php the_title(); ?>">
                 </a>
             </div>
-            <div class="footer__menu col-12 col-sm-6 col-md-8 col-xl-4">
+            <div class="footer__menu col-12 col-sm-6 col-md-8 col-xl-5">
                 <div class="row">
-                    <div class="footer__menu col-md-6">
+                    <div class="footer__menu col-md-6 d-xl-flex justify-content-xl-center">
                         <ul>
                             <li><a href="#">О проекте</a></li>
                             <li><a href="#">SPORTPIT</a></li>
@@ -24,7 +48,7 @@
                             <li><a href="#">Яндекс-бейдж</a></li>
                         </ul>
                     </div>
-                    <div class="footer__menu col-md-6">
+                    <div class="footer__menu col-md-6 d-xl-flex justify-content-xl-start">
                         <ul>
                             <li><a href="#">Сотрудничество</a></li>
                             <li><a href="#">Ассортимент</a></li>
@@ -34,9 +58,9 @@
                     </div>
                 </div>
             </div>
-            <div class="footer__contacts col-12 col-sm-6 col-md-4 col-xl-6">
+            <div class="footer__contacts col-12 col-sm-6 col-md-4 col-xl-5">
                 <div class="row">
-                    <div class="footer__contacts_email d-lg-flex flex-column align-items-end col-xl-6">
+                    <div class="footer__contacts_email d-lg-flex flex-column align-items-lg-end align-items-xl-start col-xl-6">
                         <div class="email_pic">
                             <img src="https://healthyvending.ru/wp-content/uploads/2023/02/envelope_green.png" alt="">
                             <span>По общим вопросам</span>
