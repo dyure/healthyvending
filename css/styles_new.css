@@ -17,6 +17,11 @@ body.new {
 	color: var(--color-white);
 }
 
+.bbb {
+	border: 1px solid white;
+	width: 100%;
+}
+
 /*
 	header
 */
@@ -75,6 +80,7 @@ body.new {
 	margin-bottom: 45px;
 }
 #menu-mobile_new li a {
+	font-family: 'Roboto';
 	font-weight: 700;
 	font-size: 25px;
 	line-height: 30px;
@@ -100,6 +106,10 @@ body.new {
 	footer
 */
 
+.footer__ {
+	margin-top: 70px;
+	margin-bottom: 80px;
+}
 .footer__logo img {
 	width: 194px;
 	height: 35px;
@@ -110,13 +120,14 @@ body.new {
 .footer__menu ul {
 	list-style: none;
 	padding-left: 0;
+	margin-bottom: 0;
 }
 .footer__menu ul li {
 	color: var(--color-gray);
 	font-weight: 500;
 	font-size: 15px;
 	line-height: 18px;
-	letter-spacing: 0;
+	letter-spacing: 0.02em;
 	margin-bottom: 17px;
 }
 .footer__menu ul li a {
@@ -140,11 +151,15 @@ body.new {
 .email_text {
 	color: var(--color-gray);
 }
+.email_text.first {
+	margin-bottom: 28px;
+}
 .email_text,
 .email_pic {
 	font-weight: 500;
 	font-size: 15px;
 	line-height: 18px;
+	text-align: left;
 }
 .email_text a {
 	color: inherit;
@@ -156,6 +171,7 @@ body.new {
 	font-size: 25px;
 	line-height: 30px;
 	letter-spacing: 0.05em;
+	margin-bottom: 35px;
 }
 .phone_social {
 	display: flex;
@@ -167,18 +183,13 @@ body.new {
 	width: 25px;
 	height: 25px;
     fill: var(--color-white);
-    stroke: var(--color-white);
 }
 .footer_svg:hover {
     fill: var(--color-green);
-    stroke: var(--color-green);
 }
 
 /*xxl*/
 @media screen and (max-width: 1399px) {
-	.footer__ {
-		margin-top: 70px!important;
-	}
 	.footer__logo img {
 		width: 166px;
 		height: 32px;
@@ -190,18 +201,8 @@ body.new {
 		padding-top: 0;
 		margin-bottom: 41px;
 	}
-	.email_text,
-	.email_pic {
-		letter-spacing: -1px;
-	}
 	.email_text {
 		padding-left: 35px;
-	}
-	.email_text.first {
-		margin-bottom: 28px;
-	}
-	.phone_phone {
-		margin-bottom: 35px;
 	}
 }
 /*xl*/
@@ -212,9 +213,9 @@ body.new {
 		justify-content: unset;
 		align-items: unset;
 	}
-
 	.footer__ {
-		margin-top: 70px!important;
+		margin-top: 50px;
+		margin-bottom: 70px;
 	}
 	.footer__menu ul li {
 		margin-bottom: 17px;
@@ -223,41 +224,34 @@ body.new {
 		padding-top: 0;
 		margin-bottom: 41px;
 	}
-	.email_text,
-	.email_pic {
-		letter-spacing: -1px;
-	}
 	.email_text {
 		padding-left: 35px;
 	}
 	.email_text.first {
-		margin-bottom: 28px;
+		margin-bottom: 35px;
 	}
 	.phone_phone {
-		letter-spacing: -2px;
 		margin-bottom: 35px;
 	}
 }
 /*lg*/
 @media screen and (max-width: 991px) {
 	.footer__menu ul li {
+		color: var(--color-white);
 		font-size: 18px;
 		line-height: 30px;
-		letter-spacing: 0.02em;
 		margin-bottom: 20px;
-	}
-	.phone_phone {
-		font-size: 20px;
-		line-height: 25px;
-		letter-spacing: 0;
-		margin-bottom: 39px;
 	}
 }
 /*md*/
 @media screen and (max-width: 767px) {
 	.footer__ {
-			margin-top: 40px!important;
-		}
+		margin-top: 40px;
+		margin-bottom: 60px;
+	}
+	.footer__menu ul li {
+		color: var(--color-white);
+	}
 	.footer__contacts_email {
 		padding-top: 5px;
 		margin-bottom: 45px;
@@ -269,7 +263,6 @@ body.new {
 		margin-bottom: 35px;
 	}
 	.phone_phone {
-		letter-spacing: 0.05em;
 		margin-bottom: 39px;
 	}
 }
@@ -277,14 +270,17 @@ body.new {
 @media screen and (max-width: 575px) {
 	#menu-mobile_new {
 		margin-top: 115px;
+		margin-bottom: 44px;
 	}
 	#menu-mobile_new li {
 		margin-bottom: 40px;
 	}
-	
 	.footer__ {
-			margin-top: 40px!important;
-		}
+		margin-top: 40px!important;
+	}
+	.footer__menu ul li {
+		color: var(--color-white);
+	}
 	.footer__menu:last-child {
 		margin-bottom: calc(40px - 20px);
 	}
@@ -298,14 +294,7 @@ body.new {
 	.email_text.first {
 		margin-bottom: 35px;
 	}
-	.email_pic img {
-		margin-right: 12px;
-	}
 	.phone_phone {
-		letter-spacing: 0.05em;
 		margin-bottom: 30px;
-	}
-	.phone_social {
-		margin-bottom: 44px;
 	}
 }
