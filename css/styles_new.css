@@ -65,6 +65,7 @@ body.new {
 	right: -500%;
 	height: 100%;
     overflow: auto;
+	z-index: 4;
 }
 .nav_mobile.active {
 	right: 0;
@@ -88,9 +89,10 @@ body.new {
 }
 .nav_mobile_close {
 	display: none;
-	position: absolute;
+	position: fixed;
 	top: 32px;
-	right: 0;
+	right: 32px;
+	z-index: 5;
 }
 .nav_mobile_close img {
 	width: 40px;
@@ -98,6 +100,78 @@ body.new {
 }
 .nav_mobile_close.active {
 	display: block;
+}
+
+/*
+	content
+*/
+
+.content {
+	margin-top: 70px;
+	margin-bottom: 110px;
+	background-image: url(https://healthyvending.ru/wp-content/uploads/2023/03/bg_content.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+.wp-block-columns {
+	margin-bottom: 70px;
+}
+.wp-block-columns:last-child {
+	margin-bottom: 0;
+}
+.wp-block-columns h2 {
+	font-family: 'Montserrat';
+	font-weight: 500;
+	font-size: 50px;
+	line-height: 60px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--color-gray);
+	margin-bottom: 15px;
+}
+.wp-block-columns h3 {
+	font-family: 'Montserrat';
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 40px;
+	letter-spacing: 0.03em;
+	color: var(--color-white);
+	margin-bottom: 45px;
+}
+.wp-block-columns h4 {
+	font-family: 'Montserrat';
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 18px;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: var(--color-gray);
+	margin-bottom: 15px;
+}
+.wp-block-columns p {
+	font-family: 'Montserrat';
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	letter-spacing: 0.02em;
+	color: var(--color-white);
+	margin-bottom: 20px;
+}
+.wp-block-columns img {
+	filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.3));
+	border-radius: 5px;
+}
+:where(.wp-block-columns.is-layout-flex) {
+	gap: 146px;
+}
+.wp-block-columns.left {
+	gap: 186px;
+}
+.wp-block-image.right {
+	float: right;
+}
+.wp-block-image .alignleft {
+	margin: 0;
 }
 
 /*
@@ -188,6 +262,12 @@ body.new {
 
 /*xxl*/
 @media screen and (max-width: 1399px) {
+	:where(.wp-block-columns.is-layout-flex) {
+		gap: 50px;
+	}
+	.wp-block-columns.left {
+		gap: 78px;
+	}
 	.footer__logo img {
 		width: 166px;
 		height: 32px;
@@ -205,15 +285,14 @@ body.new {
 }
 /*xl*/
 @media screen and (max-width: 1999px) {
-	.menu_logo_new img {
-		width: 144px;
-		height: 28px;
-	}
 	#menu-mobile {
 		flex-direction: column;
 		height: unset;
 		justify-content: unset;
 		align-items: unset;
+	}
+	.content {
+		margin-bottom: 100px;
 	}
 	.footer__ {
 		margin-top: 50px;
@@ -238,7 +317,41 @@ body.new {
 }
 /*lg*/
 @media screen and (max-width: 991px) {
-	.footer__menu ul li {
+	.content {
+		margin-top: 60px;
+		margin-bottom: 90px;
+	}
+	.wp-block-columns {
+		margin-bottom: 60px;
+	}
+	.wp-block-columns {
+		flex-direction: column;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.wp-block-columns.left {
+		flex-direction: column-reverse;
+	}
+	.wp-block-image.right {
+		float: unset;
+	}
+	.wp-block-image {
+		display: flex;
+		justify-content: center;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.wp-block-columns h2 {
+		font-size: 35px;
+		line-height: 45px;
+		margin-bottom: 10px;
+	}
+	.wp-block-columns h3 {
+		font-size: 20px;
+		line-height: 25px;
+		margin-bottom: 30px;
+	}
+		.footer__menu ul li {
 		color: var(--color-white);
 		font-size: 18px;
 		line-height: 30px;
@@ -247,6 +360,13 @@ body.new {
 }
 /*md*/
 @media screen and (max-width: 767px) {
+	.content {
+		margin-top: 40px;
+		margin-bottom: 90px;
+	}
+	.wp-block-columns {
+		margin-bottom: 50px;
+	}
 	.footer__ {
 		margin-top: 40px;
 		margin-bottom: 60px;
@@ -276,6 +396,29 @@ body.new {
 	}
 	#menu-mobile_new li {
 		margin-bottom: 40px;
+	}
+	#menu-mobile_new li a {
+		font-size: 20px;
+		line-height: 25px;
+		text-transform: unset;
+	}
+	.wp-block-columns h2 {
+		font-size: 30px;
+		line-height: 35px;
+	}
+	.wp-block-columns h3 {
+		font-size: 18px;
+		line-height: 30px;
+	}
+	.wp-block-columns h4 {
+		font-size: 14px;
+		line-height: 20px;
+		margin-bottom: 10px;
+	}
+	.wp-block-columns p {
+		font-size: 15px;
+		line-height: 22px;
+		margin-bottom: 17px;
 	}
 	.footer__ {
 		margin-top: 40px!important;

@@ -61,10 +61,12 @@
             </div>
         </section>
 
-        <p><br><br><br><br><br><br><br><br><br><br><br></p>
+        <section class="content">
+            <?php the_content(); ?>
+        </section>
 
         <section class="footer__ row">
-            <div class="col-12 col-sm-6 col-md-6">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-6">
                 <div class="row">
                     <div class="footer__logo d-none d-xl-block col-xl-4">
                         <a href="<?php echo get_home_url(); ?>">
@@ -89,11 +91,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-6">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-7 col-xl-6">
                 <div class="row">
                     <div class="footer__contacts col-md-12">
                         <div class="row">
-                            <div class="footer__contacts_email col-xl-6 d-sm-flex flex-column align-items-xl-center align-items-sm-end">
+                            <div class="footer__contacts_email col-lg-6 d-sm-flex flex-column align-items-xl-center align-items-sm-end">
                                 <div class="contacts_email_body">
                                     <div class="email_pic">
                                         <img src="https://healthyvending.ru/wp-content/uploads/2023/02/envelope_green.png" alt="">
@@ -111,7 +113,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="footer__contacts_phone col-xl-6 d-sm-flex flex-column align-items-sm-end">
+                            <div class="footer__contacts_phone col-lg-6 d-sm-flex flex-column align-items-sm-end">
                                 <div class="phone_phone">
                                     +7 985 649 98 89
                                 </div>
